@@ -6,7 +6,7 @@
 #   Email: f.huider@vu.nl
 # -------|---------|---------|---------|---------|---------|---------|---------|
 
-# Packages and source scripts
+# Preparation
 # ------------------------------------------------------------------------------
 zscore <- function(x){
   (x - mean(x, na.rm = T)) / sd(x, na.rm = T)
@@ -50,7 +50,6 @@ out <- tryCatch(
     return("Oops, I ran into problems creating random unique wordsets. Please run the script again.")
   }
 )
-return(out)
 
 # Assign ranking scores to words based on their letter composition. No duplicate letters:
 {
