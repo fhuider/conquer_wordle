@@ -7,7 +7,7 @@ Requirements:
 - best_wordle_starters.R
 - english_words_all.txt
 
-To obtain a ranked list of the best starter words and 3-word combinations, either open the script in Rstudio and run (ctrl+enter) its content, or run it from the terminal ("Rscript best_wordle_starters.R", without quotation marks). 
+To obtain a ranked list of the best starter words and 3-word combinations, either open the script in Rstudio and run (ctrl+enter) its content, or run it from the terminal ("Rscript best_wordle_starters.R", without quotation marks). The script assumes that the script (best_wordle_starters.R) and data (english_words_all.txt) are stored in the same directory.
 
 How does it work? In short, the script reads in a list of +370k words from the English dictionary, limits the list to 5-letter words and excludes words with duplicate letters. From this single-word list it randomly selects 300 3-word combinations (wordsets) that each consist of non-overlapping letters to optimize the alphabetic ground they cover.   The script then computes scores for each letter in the alphabet based on the frequency at which these letters occur in the 5-letter word list. These 'letter scores' are then compiled into 'word scores', and assigned to to the single-word openers and the 3-word combinations. The script outputs the top 10 single- and 3-word starting guesses that will grant you the best chances at success!
 
