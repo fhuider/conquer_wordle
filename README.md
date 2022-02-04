@@ -1,5 +1,5 @@
 # Conquer Wordle
-
+### Introduction
 With the rising popularity of [Wordle](https://www.powerlanguage.co.uk/wordle/) there is an increasing need for semi-scientific analyses of the English language to identify the best game strategy. The script 'best_wordle_starters.R' reads in a +370k list of words from the English dictionary (procured by [DWYL](https://github.com/dwyl/english-words)) to identify the 5-letter words that grant you the best chance at conquering the game and impressing your Twitter followers.
 
 #### Requirements:
