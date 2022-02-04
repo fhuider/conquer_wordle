@@ -8,7 +8,6 @@
 
 # Packages and source scripts
 # ------------------------------------------------------------------------------
-library(dplyr)
 zscore <- function(x){
   (x - mean(x, na.rm = T)) / sd(x, na.rm = T)
 }
